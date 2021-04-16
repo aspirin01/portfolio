@@ -1,0 +1,253 @@
+/* @media only screen and (min-width: 1024px){
+
+  #home{
+    transform: translateY(80px);
+  }
+} */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  /* transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease; */
+}
+div {
+  display: block;
+}
+#logo {
+  margin: 13px 0 5px 25px;
+  width: 4.7em;
+}
+:root {
+  --bg-color: #3f3f3f;
+  --text-color: #fff;
+  --border-color: #fff;
+  --hover: rgb(196, 180, 180);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.4s;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+.light_mode {
+  --bg-color: rgb(199, 159, 106);
+  --text-color: rgb(21, 20, 20);
+  --border-color: rgb(21, 20, 20);
+
+  transition: 0.4s;
+}
+.navigation {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: initial;
+  transition: all 0.5s ease 0s;
+  box-shadow: none;
+  background-color: var(--bg-color);
+  z-index: 10;
+}
+.nav {
+  list-style: none;
+  position: inherit;
+  right: 50%;
+  transform: translate(45%, 0);
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.nav li {
+  float: left;
+  padding: 15px 20px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--text-color);
+  cursor: pointer;
+  animation-delay: 400ms;
+  line-height: 15px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.container {
+  right: 3%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.nav li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2em;
+  font-weight: 650;
+  line-height: 2rem;
+}
+
+.nav li:after,
+.nav li:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: flex;
+  margin: 0 auto;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.nav li:hover:after,
+.nav li:hover:before {
+  backface-visibility: hidden;
+  border-color: var(--text-color);
+  transition: width 300ms ease-in-out;
+  width: 80%;
+}
+
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: rgb(235, 190, 130);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: red;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #615f5f;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#home {
+  margin: 14em 8%;
+  font-size: 1.5em;
+  font-weight: 500;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+#photo_div {
+  position: absolute;
+  right: 35%;
+  box-sizing: border-box;
+  display: none;
+}
+.int {
+  max-width: 50%;
+  font-size: 0.7em;
+  font-weight: 350;
+  margin-top: 3em;
+  opacity: 1;
+  transition: all 1s ease;
+}
+.int.hidden {
+  opacity: 0;
+}
+
+#photo {
+  position: absolute;
+  width: 200px;
+  display: block;
+  top: 100px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.fly-in-text {
+  list-style: none;
+  color: #2b66bf;
+  padding: 0;
+  margin: 0;
+  font-family: Segoe UI Symbol;
+}
+
+.fly-in-text li {
+  display: inline-block;
+  font-family: Segoe UI Symbol;
+  font-size: 4.5em;
+  font-weight: 700;
+
+  opacity: 1;
+  transition: all 2s ease;
+}
+
+.fly-in-text li:last-child {
+  margin-right: 0;
+}
+
+.fly-in-text.hidden li {
+  opacity: 0;
+}
+
+.fly-in-text.hidden li:nth-child(1) {
+  transform: translateX(-200px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(2) {
+  transform: translateX(20px) translateY(100px);
+}
+.fly-in-text.hidden li:nth-child(3) {
+  transform: translateX(-150px) translateY(-80px);
+}
+.fly-in-text.hidden li:nth-child(4) {
+  transform: translateX(10px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(5) {
+  transform: translateX(-300px) translateY(200px);
+}
+.fly-in-text.hidden li:nth-child(6) {
+  transform: translateX(80px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(4) {
+  transform: translateX(30px) translateY(200px);
+}
+.fly-in-text.hidden li:nth-child(7) {
+  transform: translateX(100px) translateY(-200px);
+}
