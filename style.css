@@ -17,7 +17,7 @@ div {
 }
 #logo {
   margin: 13px 0 5px 25px;
-  width: 4.7em;
+  width: 5em;
 }
 :root {
   --bg-color: #3f3f3f;
@@ -76,7 +76,7 @@ svg {
   vertical-align: middle;
   text-transform: uppercase;
   color: var(--text-color);
-  cursor: pointer;
+ 
   animation-delay: 400ms;
   line-height: 15px;
   vertical-align: middle;
@@ -131,7 +131,7 @@ svg {
 .slider {
   background-color: rgb(235, 190, 130);
   bottom: 0;
-  cursor: pointer;
+ 
   left: 0;
   position: absolute;
   right: 0;
@@ -166,14 +166,24 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#home {
-  margin: 14em 8%;
+#home{
+padding-top: 120px;
+margin: 12em auto;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+float:none;
+box-sizing: border-box;
+}
+#home1 {
+  margin: 0 8%;
   font-size: 1.5em;
   font-weight: 500;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
 }
+
 #photo_div {
   position: absolute;
   right: 35%;
@@ -182,7 +192,7 @@ input:checked + .slider:before {
 }
 .int {
   max-width: 50%;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 350;
   margin-top: 3em;
   opacity: 1;
@@ -194,7 +204,7 @@ input:checked + .slider:before {
 
 #photo {
   position: absolute;
-  width: 200px;
+  width: 230px;
   display: block;
   top: 100px;
   height: auto;
@@ -203,7 +213,7 @@ input:checked + .slider:before {
 
 .fly-in-text {
   list-style: none;
-  color: #2b66bf;
+  color: #1e5c96;
   padding: 0;
   margin: 0;
   font-family: Segoe UI Symbol;
