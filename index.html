@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -147,17 +151,43 @@
             Delhi. I'm quite passionate about Development, Designing and
             Programming. Apart from this I like playing guitar. <br />It's a
             pleasure to have you here.
+            <br>
+            <a href="resume.pdf" target="_blank" >
+            <button id="button2">
+             
+              <i class="fa" id="fa3">&#xf15c;</i>
+              
+              Resume
+            </button>
+          </a>
           </div>
+          
         </div>
 
         <div id="photo_div"><img src="lol.jpg" alt="harshit" id="photo" /></div>
       </div>
     </section>
     <section id = 'projects'>
-
+      <h1 class='project_title'>
+        Projects
+      </h1>
+      <div class= 'blocks'>
+      <div></div>
+      <div id = 'project2' style="padding:30px;">
+       <p> Basic Javascript Game </p>
+       <a href="https://lolgame.netlify.app/" target="_blank" id='lol_game' ></a>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      </div>
     </section>
-
     <script>
+      window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
+     </script>
+    <script>
+      
       function hashNoHistory(link) {
         var a = document.createElement("a");
         a.href = link.href;
@@ -166,10 +196,10 @@
       }
 
       $(document).ready(function () {
-        $("#hi").delay(1000).fadeIn(1000);
+        $("#hi").delay(1500).fadeIn(1500);
       });
       $(document).ready(function () {
-        $("#photo_div").delay(1000).fadeIn(1000);
+        $("#photo_div").delay(1500).fadeIn(1000);
       });
 
       function myFunction() {
@@ -180,7 +210,7 @@
       $(function () {
         setTimeout(function () {
           $(".fly-in-text").removeClass("hidden");
-        }, 500);
+        }, 1300);
         setTimeout(function () {
           $(".int").removeClass("hidden");
         }, 1500);
