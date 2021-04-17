@@ -17,7 +17,6 @@ div {
 }
 a {
   color: inherit;
-
   transition: 0.2s;
 }
 a:hover {
@@ -40,7 +39,7 @@ a:hover {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: 0.4s;
+  transition: 0.5s;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -62,8 +61,7 @@ svg {
 
   transition: 0.4s;
 }
-@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
-
+@import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
 
 .navigation {
   display: flex;
@@ -92,8 +90,6 @@ svg {
   vertical-align: middle;
   text-transform: uppercase;
   color: var(--text-color);
-
-  animation-delay: 400ms;
   line-height: 15px;
   vertical-align: middle;
   text-decoration: none;
@@ -208,7 +204,7 @@ input:checked + .slider:before {
 }
 .int {
   max-width: 50%;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 350;
   margin-top: 3em;
   opacity: 1;
@@ -246,7 +242,7 @@ button {
   padding-right: 5px;
 }
 #button2 {
-  transition: 0.2s;
+  transition: 0.4s;
 }
 #button2:hover {
   transition: 0.2s;
@@ -330,15 +326,12 @@ button {
   border: 2px solid var(--text-color);
   border-radius: 10px;
   font-weight: 500;
-  box-shadow: 0 0  40px 5px rgba(10, 10, 10, 0.253);
-  transition: .3s;
-
+  box-shadow: 0 0 40px 5px rgba(10, 10, 10, 0.253);
+  transition: 0.3s;
 }
 .blocks div:hover {
-  box-shadow:none;
-  transform: scale(0.95,0.95);
-
-
+  box-shadow: none;
+  transform: scale(0.95, 0.95);
 }
 #p1 {
   font-size: 1.25em;
@@ -353,10 +346,43 @@ button {
 #github1:hover {
   color: var(--border-color);
 }
-#lol_game{
+#lol_game {
   font-size: 1.08em;
   line-height: 2.2em;
+}
+
+#cont_bar {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 1em auto;
+  justify-content: center !important;
+}
+#cont_bar span{
+  border: 3px solid var(--text-color);
+  height: 50px;
+  width: 50px;
+ 
+  border-radius: 100%;
+}
+#contact_intro {
+  text-align: center;
+  font-size: 1.2em;
+  
+
+}
+#github2 {
+  display: block;
+  color: var(--theme-page-text);
+  transition:1s;
+  margin: 5px;
+  z-index: 10;
+
 
 }
 
+#cont_bar span a:hover #github2{
 
+  color: var(--border-color);
+
+  transform: rotateY(360deg);}
