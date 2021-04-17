@@ -31,9 +31,8 @@ a:hover {
 :root {
   --bg-color: #3f3f3f;
   --text-color: #fff;
-  --border-color: #468ed1;
-  --hover: rgb(196, 180, 180);
-  --toggle: rgb(232, 197, 151);
+  --border-color: #1c78ce;
+  --toggle: rgb(213, 214, 148);
 }
 
 body {
@@ -54,14 +53,13 @@ svg {
   vertical-align: middle;
 }
 .light_mode {
-  --toggle: #1c4499;
+  --toggle: #292963;
   --bg-color: rgb(232, 207, 176);
   --text-color: rgb(21, 20, 20);
   --border-color: #044d91;
 
   transition: 0.4s;
 }
-@import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
 
 .navigation {
   display: flex;
@@ -355,34 +353,84 @@ button {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin: 1em auto;
+  margin: auto;
   justify-content: center !important;
 }
-#cont_bar span{
-  border: 3px solid var(--text-color);
+#cont_bar span {
+  border: 2px solid var(--text-color);
   height: 50px;
   width: 50px;
- 
+  margin: 20px;
   border-radius: 100%;
-}
-#contact_intro {
-  text-align: center;
-  font-size: 1.2em;
-  
 
+  box-sizing: border-box;
 }
-#github2 {
+
+#cont_bar span a {
   display: block;
   color: var(--theme-page-text);
-  transition:1s;
-  margin: 5px;
-  z-index: 10;
-
-
+  transition: 1s;
+  margin: 8px;
 }
 
-#cont_bar span a:hover #github2{
+#l_in {
+  padding: 3px;
+  color: #0a66c2;
+  margin-top: 6px;
+}
 
-  color: var(--border-color);
+#cont_bar span:nth-child(1) a {
+margin-top:7px;
+}
+#cont_bar span:nth-child(2):hover a {
+  color: var(--text-color);
+  transform: rotateZ(360deg);
+}
+#cont_bar span:nth-child(3):hover a {
+  color: var(--text-color);
+  transform: rotateZ(-360deg);
+}
+#cont_bar span:nth-child(1):hover a {
+  color: var(--text-color);
+  transform: rotateZ(360deg);
+}
+#cont_bar span:nth-child(4):hover a{
 
-  transform: rotateY(360deg);}
+  color:var(--text-color);
+    transform: rotateZ(-360deg);
+    
+  }
+ #insta{
+   font-size: larger;
+ }
+#end{
+margin-left: 50%;
+margin-top: 4em;
+font-size: 1em;
+font-weight: 400;
+max-width: max-content;
+animation-name: heartFadeInOut; 
+animation-iteration-count: infinite;
+animation-duration: 2s;
+
+ }
+ @keyframes heartFadeInOut {  0% {
+  transform: scale(1);
+}
+25% {
+  transform: scale(1.2);
+}
+40% {
+  transform: scale(1.1);
+}
+60% {
+  transform: scale(1.2);
+}
+100% {
+  transform: scale(1);
+}
+ }
+
+#end{ 
+
+}
