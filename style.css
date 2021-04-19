@@ -308,12 +308,12 @@ button {
 .blocks div {
   margin: 12px;
   height: 188px;
-  min-width: 250px;
+  min-width: 300px;
   padding: 26px 22px 22px 20px;
   border: 2px solid var(--text-color);
   border-radius: 10px;
   font-weight: 500;
-  box-shadow: 0 0 40px 5px rgba(10, 10, 10, 0.253);
+  box-shadow: 0 0 10px 7px rgba(10, 10, 10, 0.253);
   transition: 0.2s;
 }
 .blocks div:hover {
