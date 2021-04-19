@@ -308,7 +308,7 @@ button {
 .blocks div {
   margin: 12px;
   height: 188px;
-  min-width: 300px;
+  min-width: 250px;
   padding: 26px 22px 22px 20px;
   border: 2px solid var(--text-color);
   border-radius: 10px;
