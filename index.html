@@ -93,31 +93,55 @@
           transform="translate(-298.32 -131.08)" />
       </svg>
     </a>
-
-    <div class='nav'>
-
-      <div>
-
-        <a href="#home"> Home</a>
+    
+    <button class = 'res_button' onclick = >
+      <div class= 'res_nav'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="__lottie_element_2"><rect width="512" height="512" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g style="display: block;" transform="matrix(1,0,0,1,63.74998474121094,337.94061279296875)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.58300018310547)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.33300018310547 C-192,21.33300018310547 192,21.33300018310547 192,21.33300018310547 C192,21.33300018310547 192,-21.33300018310547 192,-21.33300018310547 C192,-21.33300018310547 -192,-21.33300018310547 -192,-21.33300018310547 C-192,-21.33300018310547 -192,21.33300018310547 -192,21.33300018310547z"></path></g></g><g style="display: none;" transform="matrix(1,0,0,1,63.75,234.4149932861328)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.583999633789062)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.333999633789062 C-192,21.333999633789062 192,21.333999633789062 192,21.333999633789062 C192,21.333999633789062 192,-21.333999633789062 192,-21.333999633789062 C192,-21.333999633789062 -192,-21.333999633789062 -192,-21.333999633789062 C-192,-21.333999633789062 -192,21.333999633789062 -192,21.333999633789062z"></path></g></g><g style="display: block;" transform="matrix(1,0,0,1,63.75,234.4149932861328)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.583999633789062)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.333999633789062 C-192,21.333999633789062 192,21.333999633789062 192,21.333999633789062 C192,21.333999633789062 192,-21.333999633789062 192,-21.333999633789062 C192,-21.333999633789062 -192,-21.333999633789062 -192,-21.333999633789062 C-192,-21.333999633789062 -192,21.333999633789062 -192,21.333999633789062z"></path></g></g><g style="display: block;" transform="matrix(1,0,0,1,63.75001525878906,127.89754486083984)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.58300018310547)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.33300018310547 C-192,21.33300018310547 192,21.33300018310547 192,21.33300018310547 C192,21.33300018310547 192,-21.33300018310547 192,-21.33300018310547 C192,-21.33300018310547 -192,-21.33300018310547 -192,-21.33300018310547 C-192,-21.33300018310547 -192,21.33300018310547 -192,21.33300018310547z"></path></g></g></g></svg>
       </div>
-      <div><a href="#projects">Projects</a></div>
-      <div><a href="#contact">Contact</a></div>
+  </button>
+    
 
+  <div class='nav'>
+
+    <div>
+
+      <a href="#home"> Home</a>
     </div>
-    <div class="toggled">
-      <label class="switch" for="checkbox">
-        <input type="checkbox" id="checkbox" onclick="myFunction()" />
-        <div class="slider round"></div>
-      </label>
-    </div>
-   </div>
-
-
+    <div><a href="#projects">Projects</a></div>
+    <div><a href="#contact">Contact</a></div>
 
   </div>
+  <div class="toggled">
+    <label class="switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onclick="myFunction()" />
+      <div class="slider round"></div>
+    </label>
+
+  </div> 
+
+   </div>
+  
+   <div class='nav_dark'>
+
+    <div>
+
+      <a href="#home"> Home</a>
+    </div>
+    <div><a href="#projects">Projects</a></div>
+    <div><a href="#contact">Contact</a></div>
+
+  
+    <label class="switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onclick="myFunction()" />
+      <div class="slider round"></div>
+    </label>
+
+</div>
   <section id="home">
+    
+    <div id="photo_div"><img src="lol.jpg" alt="harshit" id="photo" /></div>
     <div id="home1">
-      <div>
+  
         <span id="hi" style="display: none">Hi, I'm</span>
 
         <div class="fly-in-text hidden">
@@ -135,21 +159,23 @@
           Delhi. I'm quite passionate about Development, Designing and
           Programming. Apart from this I like playing guitar. <br />It's a
           pleasure to have you here.
-          <br />
-          <a href="resume.pdf" target="_blank">
-            <button id="button2">
-              <i class="fa" id="fa3">&#xf15c;</i>
-
-              Resume
-            </button>
-          </a>
+       <div class="resume">
+         
+         <a href="resume.pdf" target="_blank" >
+           <button id="button2">
+             <i class="fa" id="fa3">&#xf15c;</i>
+             Resume
+           </button>
+         </a>
+       </div>
         </div>
       </div>
 
-      <div id="photo_div"><img src="lol.jpg" alt="harshit" id="photo" /></div>
-    </div>
+ 
   </section>
   <section id="projects">
+    <h1 class="project_title_res">
+      Projects</h1>
     <div class="blocks">
       <div>
         <span id="p1">Basic JS Game </span>
@@ -276,6 +302,8 @@
         document.body.style.opacity = "100";
       }, 500);
     };
+    
+
   </script>
   <script>
 
@@ -288,10 +316,10 @@
     }
 
     $(document).ready(function () {
-      $("#hi").delay(700).fadeIn(700);
+      $("#hi").delay(1500).fadeIn(1500);
     });
     $(document).ready(function () {
-      $("#photo_div").delay(2000).fadeIn(2000);
+      $("#photo_div").delay(1400).fadeIn(1400);
     });
 
     function myFunction() {

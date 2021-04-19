@@ -64,7 +64,7 @@ svg {
 .navigation {
   display: flex;
   position: fixed;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
   left: 0;
   top: 0;
@@ -73,25 +73,22 @@ svg {
   background-color: var(--bg-color);
   z-index: 10;
 }
-
+.res_button {
+  display: none;
+}
 
 .nav {
-
   text-transform: uppercase;
   color: var(--text-color);
   margin: auto;
-  
-
 }
-.nav div{
+.nav div {
   display: inline-block;
-
 }
 .toggled {
   margin-right: 1%;
-  margin-top:auto;
-  margin-bottom:auto;
-
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .nav a {
   text-decoration: none;
@@ -178,24 +175,22 @@ input:checked + .slider:before {
   padding-left: 15px;
   float: none;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 #home1 {
-  margin: 0 8%;
+  margin: 8%;
   font-size: 1.5em;
   font-weight: 500;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
 }
 
 #photo_div {
-  position: absolute;
-  right: 30%;
+  margin: auto 10%;
   box-sizing: border-box;
   display: none;
 }
 .int {
-  max-width: 50%;
   font-size: 0.7em;
   font-weight: 350;
   margin-top: 3em;
@@ -207,7 +202,6 @@ input:checked + .slider:before {
 }
 
 #photo {
-  position: absolute;
   width: 230px;
   display: block;
   top: 100px;
@@ -242,7 +236,6 @@ button {
   border: 2px solid var(--border-color);
 }
 .fly-in-text {
-  list-style: none;
   color: #1e5c96;
   padding: 0;
   margin: 0;
@@ -252,11 +245,16 @@ button {
 .fly-in-text span {
   display: inline-block;
   font-family: Segoe UI Symbol;
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: 700;
-
   opacity: 1;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 1050px) {
+  .fly-in-text span {
+    font-size: 2.5em;
+  }
 }
 
 .fly-in-text span:last-child {
@@ -293,7 +291,7 @@ button {
 }
 
 #projects {
-  margin: 40em 8%;
+  margin: 40em 0;
   padding-top: 90px;
 }
 .project_title {
@@ -304,22 +302,19 @@ button {
 }
 
 .blocks {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 27% 27%;
-  align-items: start;
+  display: flex;
   justify-content: space-between;
 }
 .blocks div {
   margin: 12px;
   height: 188px;
-  min-width: 200px;
-  padding: 36px 32px 32px;
+  min-width: 250px;
+  padding: 26px 22px 22px 20px;
   border: 2px solid var(--text-color);
   border-radius: 10px;
   font-weight: 500;
   box-shadow: 0 0 40px 5px rgba(10, 10, 10, 0.253);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .blocks div:hover {
   box-shadow: none;
@@ -329,7 +324,9 @@ button {
   font-size: 1.25em;
   font-weight: 600;
 }
-
+.project_title_res {
+  display: none;
+}
 #github1 {
   float: right;
   width: 1.25em;
@@ -346,36 +343,35 @@ button {
 #cont_bar {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+
   margin: auto;
   justify-content: center !important;
 }
 #cont_bar span {
-  border: 2px solid var(--text-color);
   height: 50px;
   width: 50px;
   margin: 20px;
-  border-radius: 100%;
 
-  box-sizing: border-box;
 }
 
 #cont_bar span a {
   display: block;
   color: var(--theme-page-text);
   transition: 1s;
-  margin: 8px;
+  margin:7px;
+  
 }
 
-#l_in {
-  padding: 3px;
+#cont_bar span:nth-child(2) a {
   color: #0a66c2;
   margin-top: 6px;
 }
-
-#cont_bar span:nth-child(1) a {
-  margin-top: 7px;
+#cont_bar span:nth-child(4) a {
+  color: #0a66c2;
+  margin-top: 9px;
 }
+
+
 #cont_bar span:nth-child(2):hover a {
   color: var(--text-color);
   transform: rotateZ(360deg);
@@ -392,9 +388,8 @@ button {
   color: var(--text-color);
   transform: rotateZ(-360deg);
 }
-#insta {
-  font-size: larger;
-}
+
+
 #end {
   margin-left: 50%;
   margin-top: 4em;
@@ -408,28 +403,123 @@ button {
 @keyframes heartFadeInOut {
   0% {
     transform: scale(1);
-  }
+  } 
   25% {
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
   40% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
   60% {
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
   100% {
     transform: scale(1);
   }
 }
-.navigation_res,.nav_res{
-    display: none;
+.navigation_res,
+.nav_res {
+  display: none;
 }
 
+#dropdown {
+  color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.nav_dark{
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+/* .nav_dark{
+  position: fixed;
+  background-color: var(--bg-color);
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: -2px;
+  margin-left: -15px;
   
-  #dropdown {
-        color: rgba(0,0,0,1);
-border-color: rgba(0,0,0,0);
-    
+
+} */
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    box-shadow: none;
+    background-color: var(--bg-color);
+    z-index: 1000;
+  }
+  .nav,
+  .toggled {
+    display: none;
+  }
+  .res_button {
+    display: inherit;
+    margin: 0;
+    border: none;
+  }
+  .res_nav {
+    width: 48px;
+  }
+  #cont_bar span {
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+  
+  }
+  #home {
+    display: block;
+    margin-top: 100px;
+    width: 100%;
+  }
+  #home1 {
+    margin: 8% 0;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .resume {
+    text-align: center;
+  }
+  .fly-in-text span {
+    font-size: 2em;
+  }
+  .fly-in-text {
+    text-align: center;
+  }
+  #photo_div {
+    margin: auto;
+    box-sizing: border-box;
+  }
+  #photo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+  }
+  .project_title_res {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    color: #266bac;
+    box-sizing: inherit;
+  }
+  .project_title {
+    display: none;
   }
 
+  .blocks {
+    display: block;
+  }
+}
