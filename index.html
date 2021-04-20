@@ -94,49 +94,30 @@
       </svg>
     </a>
     
-    <button class = 'res_button' onclick = >
+    <button class = 'res_button' id = 'resb' >
       <div class= 'res_nav'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="__lottie_element_2"><rect width="512" height="512" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g style="display: block;" transform="matrix(1,0,0,1,63.74998474121094,337.94061279296875)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.58300018310547)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.33300018310547 C-192,21.33300018310547 192,21.33300018310547 192,21.33300018310547 C192,21.33300018310547 192,-21.33300018310547 192,-21.33300018310547 C192,-21.33300018310547 -192,-21.33300018310547 -192,-21.33300018310547 C-192,-21.33300018310547 -192,21.33300018310547 -192,21.33300018310547z"></path></g></g><g style="display: none;" transform="matrix(1,0,0,1,63.75,234.4149932861328)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.583999633789062)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.333999633789062 C-192,21.333999633789062 192,21.333999633789062 192,21.333999633789062 C192,21.333999633789062 192,-21.333999633789062 192,-21.333999633789062 C192,-21.333999633789062 -192,-21.333999633789062 -192,-21.333999633789062 C-192,-21.333999633789062 -192,21.333999633789062 -192,21.333999633789062z"></path></g></g><g style="display: block;" transform="matrix(1,0,0,1,63.75,234.4149932861328)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.583999633789062)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.333999633789062 C-192,21.333999633789062 192,21.333999633789062 192,21.333999633789062 C192,21.333999633789062 192,-21.333999633789062 192,-21.333999633789062 C192,-21.333999633789062 -192,-21.333999633789062 -192,-21.333999633789062 C-192,-21.333999633789062 -192,21.333999633789062 -192,21.333999633789062z"></path></g></g><g style="display: block;" transform="matrix(1,0,0,1,63.75001525878906,127.89754486083984)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,192.25,21.58300018310547)"><path fill="#1e5c96" fill-opacity="1" d=" M-192,21.33300018310547 C-192,21.33300018310547 192,21.33300018310547 192,21.33300018310547 C192,21.33300018310547 192,-21.33300018310547 192,-21.33300018310547 C192,-21.33300018310547 -192,-21.33300018310547 -192,-21.33300018310547 C-192,-21.33300018310547 -192,21.33300018310547 -192,21.33300018310547z"></path></g></g></g></svg>
       </div>
   </button>
     
 
-  <div class='nav'>
+  <div class='nav' id = 'nav'>
 
-    <div>
-
-      <a href="#home"> Home</a>
-    </div>
+    <div><a href="#home"> Home</a></div>
     <div><a href="#projects">Projects</a></div>
     <div><a href="#contact">Contact</a></div>
 
   </div>
-  <div class="toggled">
+  <div class="toggled" id = 'toggled'>
     <label class="switch" for="checkbox">
       <input type="checkbox" id="checkbox" onclick="myFunction()" />
       <div class="slider round"></div>
     </label>
 
   </div> 
-
    </div>
-  
-   <div class='nav_dark'>
 
-    <div>
-
-      <a href="#home"> Home</a>
-    </div>
-    <div><a href="#projects">Projects</a></div>
-    <div><a href="#contact">Contact</a></div>
-
-  
-    <label class="switch" for="checkbox">
-      <input type="checkbox" id="checkbox" onclick="myFunction()" />
-      <div class="slider round"></div>
-    </label>
-
-</div>
+   
   <section id="home">
     
     <div id="photo_div"><img src="lol.jpg" alt="harshit" id="photo" /></div>
@@ -334,7 +315,7 @@
       setTimeout(function () {
         $(".int").removeClass("hidden");
       }, 2800);
-    })();
+    });
 
     $(".js-anchor-link").click(function (e) {
       e.preventDefault();
@@ -344,12 +325,7 @@
         $("body, html").animate({ scrollTop: scrollTo + "px" }, 800);
       }
     });
-    // Trigger CSS animations on scroll.
-    // Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
 
-    // Looking for a version that also reverses the animation when
-    // elements scroll below the fold again?
-    // --> Check https://codepen.io/bramus/pen/vKpjNP
 
     jQuery(function ($) {
 
@@ -380,6 +356,13 @@
       $(window).trigger('scroll');
 
     });
+    document.getElementById("resb").onclick = function() {myFunction2()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction2() {
+  document.getElementById("nav").classList.toggle("show");
+  document.getElementById("toggled").classList.toggle("show2");
+}
   </script>
 </body>
 
