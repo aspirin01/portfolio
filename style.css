@@ -478,8 +478,9 @@ button {
   .res_button {
     display: inherit;
     margin: 0;
-    border: none;
+    border: none  !important;;
   }
+
   .res_nav {
     width: 48px;
   }
