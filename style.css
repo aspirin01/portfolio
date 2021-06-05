@@ -17,7 +17,7 @@ div {
 }
 a {
   color: inherit;
-  transition: 0.2s;
+  transition: 0.21s;
 }
 a:hover {
   color: var(--border-color);
@@ -176,6 +176,7 @@ input:checked + .slider:before {
   float: none;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   width: 100%;
 }
@@ -320,26 +321,28 @@ button {
   box-shadow: none;
   transform: scale(0.95, 0.95);
 }
-#p1 {
+.p1 {
   font-size: 1.25em;
   font-weight: 600;
 }
 .project_title_res {
   display: none;
 }
-#github1 {
+.github1 {
   float: right;
   width: 1.25em;
   color: var(--theme-page-text);
 }
-#github1:hover {
+.github1:hover {
   color: var(--border-color);
 }
 #lol_game {
   font-size: 1.08em;
   line-height: 2.2em;
 }
-
+.blocks div p{
+  max-width: 400px;
+}
 #cont_bar {
   display: flex;
   flex-wrap: wrap;
