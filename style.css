@@ -323,6 +323,7 @@ button {
 #p1 {
   font-size: 1.25em;
   font-weight: 600;
+  padding-right: 1.3rem;
 }
 .project_title_res {
   display: none;
