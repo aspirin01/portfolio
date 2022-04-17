@@ -299,7 +299,12 @@ button {
   color: #266bac;
   box-sizing: inherit;
 }
-
+.contact_title {
+  text-align: center;
+  font-size: 3em;
+  color: var(--theme-page-text);
+  box-sizing: inherit;
+}
 .blocks {
   display: flex;
   justify-content: space-between;
@@ -529,6 +534,7 @@ button {
     color: #266bac;
     box-sizing: inherit;
   }
+  
   .project_title {
     display: none;
   }
